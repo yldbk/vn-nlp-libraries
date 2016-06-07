@@ -25,10 +25,10 @@
         <w msd="date_yyyy.mm.dd">(19|20)\d\d\.(0*[1-9]|1[012])\.([12][0-9]|3[01]|0*[1-9])</w>
         <w msd="hhmmss">([0-1]\d|[2][0-3]):[0-5]\d:[0-5]\d</w>
         <w msd="percent">([0-9]*[\.,])?[0-9]+%</w>
-        <w msd="name1">[A-ZÁÂĐÐÍÔƯỨÝỶ][aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]*</w>
-        <w msd="name2">([A-ZÁÂĐÐÍÔƯỨÝỶ][aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]*)(\s+[A-ZÁÂĐÐÍÔƯỨÝỶ][aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]+)*</w>
-        <w msd="phrase">([AÀẢÃÁẠĂẰẲẴẮẶÂẦẨẪẤẬBCDĐÐEÈẺẼÉẸÊỀỂỄẾỆFGHIÌỈĨÍỊJKLMNOÒỎÕÓỌÔỒỔỖỐỘƠỜỞỠỚỢPQRSTUÙỦŨÚỤƯỪỬỮỨỰVWXYỲỶỸÝỴZ])?([aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz\s])*([aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz])+$*</w>
-        <w msd="allcaps">([AÀẢÃÁẠĂẰẲẴẮẶÂẦẨẪẤẬBCDĐÐEÈẺẼÉẸÊỀỂỄẾỆFGHIÌỈĨÍỊJKLMNOÒỎÕÓỌÔỒỔỖỐỘƠỜỞỠỚỢPQRSTUÙỦŨÚỤƯỪỬỮỨỰVWXYỲỶỸÝỴZ]+)(\s*[AÀẢÃÁẠĂẰẲẴẮẶÂẦẨẪẤẬBCDĐÐEÈẺẼÉẸÊỀỂỄẾỆFGHIÌỈĨÍỊJKLMNOÒỎÕÓỌÔỒỔỖỐỘƠỜỞỠỚỢPQRSTUÙỦŨÚỤƯỪỬỮỨỰVWXYỲỶỸÝỴZ]+)*[^aàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz/\)\(\?!\.;:,\-"']</w>
+        <w msd="name1">[A-Z][abcdefghijklmnopqrstuvwxyz]*</w>
+        <w msd="name2">([A-Z][abcdefghijklmnopqrstuvwxyz]*)(\s+[A-Z][abcdefghijklmnopqrstuvwxyz]+)*</w>
+        <w msd="phrase">([ABCDEFGHIJKLMNOPQRSTUVWXYZ])?([abcdefghijklmnopqrstuvwxyz\s])*([abcdefghijklmnopqrstuvwxyz])+$*</w>
+        <w msd="allcaps">([ABCDEFGHIJKLMNOPQRSTUVWXYZ]+)(\s*[ABCDEFGHIJKLMNOPQRSTUVWXYZ]+)*[^abcdefghijklmnopqrstuvwxyz/\)\(\?!\.;:,\-"']</w>
         <w msd="fraction">(\d+)/(\d+)</w>
         <w msd="email">(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,3})</w>
         <w msd="return">(^$)</w>
@@ -55,9 +55,9 @@
         <w msd="lbracket">\[</w>
         <w msd="bslash">\\</w>
         <w msd="rbracket">\]</w>
-        <w msd="entity0">\d+([\.,]\d+)*[A-Zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]+\d+$</w>
-        <w msd="entity1">[A-Zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]+(\d)*$</w>
-        <w msd="entity2">[A-Zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz\d]+([\.\-/][\dA-Zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]+)*[\dA-Zaàảãáạăằẳẵắặâầẩẫấậbcdđeèẻẽéẹêềểễếệfghiìỉĩíịjklmnoòỏõóọôồổỗốộơờởỡớợpqrstuùủũúụưừửữứựvwxyỳỷỹýỵz]+</w>
+        <w msd="entity0">\d+([\.,]\d+)*[A-Zabcdefghijklmnopqrstuvwxyz]+\d+$</w>
+        <w msd="entity1">[A-Zabcdefghijklmnopqrstuvwxyz]+(\d)*$</w>
+        <w msd="entity2">[A-Zabcdefghijklmnopqrstuvwxyz\d]+([\.\-/][\dA-Zabcdefghijklmnopqrstuvwxyz]+)*[\dA-Zabcdefghijklmnopqrstuvwxyz]+</w>
         <w msd="space">\s+</w>
         <w msd="word">\w</w>
         <w msd="lcbrace">\{</w>
